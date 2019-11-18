@@ -20,6 +20,8 @@ h1 {
     color: #ffffff;
 }
 
-span {
-    color: #ffffff;
+#stripes {
+    height: 30px;
+    background: #ffffff;
+    text-align: center;
 }

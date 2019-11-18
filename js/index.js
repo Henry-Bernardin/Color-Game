@@ -10,13 +10,13 @@ var h1 = document.querySelector("h1");
 colorDisplay.textContent = pickedColor;
 
 for(var i = 0; i < squares.length; i++){
-    // Add intial colors to squares
+    //add intial colors to squares
     squares[i].style.backgroundColor = colors[i]; 
-    //Add click listeners to squares
+    //add click listeners to squares
     squares[i].addEventListener("click", function(){
-    //Grab color of clicked square    
+    //grab color of clicked square    
     var clickedColor = this.style.backgroundColor; 
-    //Compare color to picked color
+    //compare color to picked color
     if (clickedColor === pickedColor){
         messageDisplay.textContent = "Correct!";
         changeColors(pickedColor); 
@@ -28,7 +28,7 @@ for(var i = 0; i < squares.length; i++){
     });
 }
 
-function changeColors(color){
+function changeColors(color) {
     //loop through all squares
     for (var i = 0; i < squares.length; i++){
     //change each color to match given color
@@ -36,7 +36,7 @@ function changeColors(color){
     }
 }
 
-function pickedColor(){
+function pickedColor() {
     var random = Math.floor(Math.random() * colors.length); 
     return colors [random]; 
 }
@@ -53,7 +53,7 @@ function generateRandomColors(num) {
     return array; 
 }
 
-function randomColor () {
+function randomColor() {
     var r = Math.floor(Math.random() * 256); 
     var g = Math.floor(Math.random() * 256); 
     var b = Math.floor(Math.random() * 256); 
