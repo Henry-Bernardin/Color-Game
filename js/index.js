@@ -70,7 +70,7 @@ for(var i = 0; i < squares.length; i++){
         h1.style.backgroundColor = pickedColor; 
         resetButton.textContent = "Play Again?";
     } else {
-        this.style.backgroundColor = "steelblue"; 
+        this.style.backgroundColor = "#232323"; 
         messageDisplay.textContent = "Try Again!"; 
       
     }
