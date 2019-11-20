@@ -16,10 +16,10 @@ resetButton.addEventListener("click", function() {
     colorDisplay.textContent = pickedColor; 
     //change colors of squares
     for(var i = 0; i < squares.length; i++){
-    //add intial colors to squares
+    //change colors of squares
     squares[i].style.backgroundColor = colors[i]; 
-    //add click listeners to squares
     }
+    h1.style.backgroundColor = "#232323";
  })
 
 colorDisplay.textContent = pickedColor;
@@ -36,9 +36,11 @@ for(var i = 0; i < squares.length; i++){
         messageDisplay.textContent = "Correct!";
         changeColors(clickedColor); 
         h1.style.backgroundColor = pickedColor; 
+        resetButton.textContent = "Play Again?";
     } else {
         this.style.backgroundColor = "#232323"; 
         messageDisplay.textContent = "Try Again!"; 
+      
     }
     });
 }
