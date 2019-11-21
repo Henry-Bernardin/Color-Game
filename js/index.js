@@ -44,6 +44,10 @@ resetButton.addEventListener("click", function() {
     colors = generateRandomColors(numSquares);
     //pick a new color from array 
     pickedColor = pickColor(); 
+    // Clear out "Try again!"
+    messageDisplay.textContent = "";
+    //"Play Again" will reset back to "New Colors"
+    this.textContent = "New Colors";
     //change colorDisplay to match picked Color
     colorDisplay.textContent = pickedColor; 
     //change colors of squares
