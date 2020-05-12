@@ -1,4 +1,4 @@
-# Color-Game
+# Color-Game-App
 
 #Overview
 - Fully functional color matching game. Six random squares are displayed, with one being correct. Once correct color is chosen, all tiles well display the correct color. 
